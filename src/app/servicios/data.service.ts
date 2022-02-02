@@ -22,6 +22,9 @@ export class DataService{
     const token  = this.login.getIdToken()
     let url:string
     url = 'https://proyecto-planta-b80cd-default-rtdb.firebaseio.com/Planta.json?auth='+token;
-    this.httpClient.put(url,planta).subscribe();
+    this.httpClient.put(url,planta).subscribe(
+      response => console.log("Resultado de Guardar las personas"+response),
+      error => console.log("Error al guardar personas"+error)
+    );
   }
 }

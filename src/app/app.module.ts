@@ -14,12 +14,13 @@ import {AngularFireModule} from "@angular/fire/compat";
 import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
 import {AngularFireAuthModule} from "@angular/fire/compat/auth";
 import {LoginService} from "./servicios/login.service";
-import {AuthGuard} from "@angular/fire/auth-guard";
+
 import {graficaService} from "./servicios/grafica.service";
 import {DataService} from "./servicios/data.service";
 import {AppRoutingModule} from "./app-routing.module";
 import {environment} from "../environments/environment";
 import {HighchartsChartModule} from "highcharts-angular";
+import {AuthGuard} from "./guardianes/auth.guard";
 
 @NgModule({
   declarations: [
