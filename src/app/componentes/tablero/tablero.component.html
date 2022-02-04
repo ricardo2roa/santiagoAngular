@@ -1,33 +1,33 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-9">
+      <div class="col-12">
+        <div class="card text-center bg-danger text-white mt-3 mb-3">
+          <div class="card-body">
+            <h3>Humedad Actual</h3>
+            <h4 class="display-4">
+              {{this.planta.Humedad}}%
+            </h4>
+          </div>
+        </div>
+
+        <div class="card text-center bg-success text-white mb-3">
+          <div class="card-body">
+            <h3>N. Riegos</h3>
+            <h4 class="display-4">
+              {{this.planta.nveces}}
+            </h4>
+          </div>
+        </div>
+
+      </div>
+
+    <div class="col-12 d-block">
       <highcharts-chart
         [Highcharts] = "highcharts"
         [options] = "chartOptions"
-        class="grafica">
+        class="grafica grafica_tamaño">
       </highcharts-chart>
-    </div>
-
-    <div class="col-3">
-      <div class="card text-center bg-danger text-white mb-3">
-        <div class="card-body">
-          <h3>Humedad Actual</h3>
-          <h4 class="display-4">
-            {{this.planta.Humedad}}%
-          </h4>
-        </div>
-      </div>
-
-      <div class="card text-center bg-success text-white mb-3">
-        <div class="card-body">
-          <h3>N. Riegos</h3>
-          <h4 class="display-4">
-            {{this.planta.nveces}}
-          </h4>
-        </div>
-      </div>
-
     </div>
   </div>
 </div>

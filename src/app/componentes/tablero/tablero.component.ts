@@ -43,6 +43,8 @@ export class TableroComponent implements OnInit {
       title: {
         text: "Humedad en porcentaje"
       }
+    },chart:{
+      width: 350
     },
     series: [{
       data: [],
